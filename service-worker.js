@@ -1,9 +1,15 @@
 'use strict';
-const CACHE_NAME = 'my-pwa-hw4-v2';
+const CACHE_NAME = 'my-pwa-hw4-v3';
 const APP_FILES = [
-  './', './index.html', './style.css', './app.js', './manifest.webmanifest',
-  './images/lightblue.jpg', './images/lightgold.jpg',
-  './icons/icon-192.png', './icons/icon-512.png'
+  './',
+  './index.html',
+  './style.css',
+  './app.js',
+  './manifest.webmanifest',
+  './lightblue.jpg',
+  './lightgold.jpg',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', event => {
