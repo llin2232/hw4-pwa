@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#245d88">
+  <meta name="description" content="Learn how Progressive Web Apps work and try offline background switching.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>My PWA Demo</title>
+</head>
+<body>
+  <main class="container">
+    <header><span class="eyebrow">Homework 4</span><h1>My Progressive Web App</h1><p class="subtitle">A simple app that works online and offline.</p></header>
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">What is a PWA?</h2>
+      <p>A Progressive Web Application (PWA) is a website that can work more like an app. It uses web technologies such as HTML, CSS, and JavaScript. A PWA can have an icon on a phone or computer and can open in its own window after a user installs it.</p>
+      <p>PWAs can also work when the internet connection is weak or unavailable. A service worker can save important files in a cache so the page can load offline. A web app manifest tells the browser the app's name, icon, starting page, and display mode. Responsive design helps the same app fit both small and large screens.</p>
+    </section>
+    <section aria-labelledby="background-heading">
+      <h2 id="background-heading">Choose a Background</h2>
+      <label for="background-choice">Background color image</label>
+      <select id="background-choice">
+        <option value="white">Plain White</option>
+        <option value="blue">Light Blue</option>
+        <option value="gold">Light Gold</option>
+      </select>
+      <p class="hint">You can still switch backgrounds when offline.</p>
+    </section>
+    <section aria-labelledby="name-heading">
+      <h2 id="name-heading">Remember My Name (Extra Credit)</h2>
+      <label for="name-input">Your name</label>
+      <input id="name-input" name="name" type="text" maxlength="80" autocomplete="name" placeholder="Enter your name">
+      <p id="saved-name" aria-live="polite">No name saved yet.</p>
+      <p class="hint">Your first saved name stays in Local Storage when you close and reopen the page.</p>
+    </section>
+    <footer><span id="offline-status" role="status" aria-live="polite">Checking connection...</span></footer>
+  </main>
+</body>
+</html>
