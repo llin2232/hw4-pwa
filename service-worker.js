@@ -1,5 +1,4 @@
 'use strict';
-const CACHE_NAME = 'my-pwa-hw4-v3';
 const APP_FILES = [
   './',
   './index.html',
